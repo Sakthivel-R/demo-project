@@ -1,0 +1,36 @@
+<template>
+    <lightning-card title="Pagination demo">
+        <lightning-datatable 
+            key-field="Id" 
+            data={paginatedData} 
+            columns={columns}
+            selected-rows={selectedAccount}
+            onrowselection={handleRowSelection}>
+        </lightning-datatable>
+
+        <template lwc:if={isLoading}>
+            <lightning-spinner alternative-text="Loading..." size="medium"></lightning-spinner>
+        </template>
+
+        <div class="slds-m-top_medium slds-align_absolute-center">
+            <lightning-button 
+                label="Previous"
+                onclick={handlePrevious}
+                disabled={isFirstPage}>
+            </lightning-button>
+
+            <span class="slds-m-horizontal_small">Page {pageNumber} of {totalPages}</span>
+
+            <lightning-button 
+                label="Next"
+                onclick={handleNext}
+                disabled={isLastPage}>
+            </lightning-button>
+        </div>
+
+        <lightning-button
+            label="Update"
+            onclick={bulkUpdate}>
+        </lightning-button>
+    </lightning-card>
+</template>

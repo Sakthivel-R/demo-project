@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="contact List">
+        <template lwc:if={contact}>
+            <ul>
+                <template for:each={contact} for:item="con">
+                    <li key= {con.Id}>
+                        {con.Name}
+                    </li>
+                </template>
+            </ul>
+        </template>
+        <template lwc:else>
+            <p>error</p>
+        </template>
+    </lightning-card>
+</template>

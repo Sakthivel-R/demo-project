@@ -1,0 +1,15 @@
+<template>
+        <section onclick={sectionhandler}>
+        <div>
+            <h2> last component </h2>
+        <lightning-input type="text" label={name} value="Test Text field." onkeyup={inputhandler}></lightning-input>
+        <footer onclick={handler}>
+        <lightning-button
+            label="fire event 3"
+            variant="brand"
+            onclick={eventfire}>
+        </lightning-button>
+        </footer>
+        </div>
+        </section>
+    </template>

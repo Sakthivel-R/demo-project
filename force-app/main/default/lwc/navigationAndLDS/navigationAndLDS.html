@@ -1,0 +1,25 @@
+<template>
+    <div class="slds-p-around_medium lgc-bg">
+        <lightning-input 
+            type="text" 
+            label="Enter some text" 
+            placeholder="type here..." 
+            required>
+        </lightning-input>
+        
+        <lightning-button 
+            label="Go to Home" 
+            onclick={navigateToHome}>
+        </lightning-button>
+
+        <lightning-button 
+            label="Account Record" 
+            onclick={navigatetonewrecord}>
+        </lightning-button>
+
+        <lightning-button 
+            label="Account Record with default" 
+            onclick={navigatetopredefined}>
+        </lightning-button>
+    </div>
+</template>

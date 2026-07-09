@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="wrap">
+        <template lwc:if={accounts}>
+            <lightning-datatable
+            key-field = "accid"
+            data={accounts}
+            columns={columns}
+            ></lightning-datatable>
+        </template>
+    </lightning-card>
+</template>

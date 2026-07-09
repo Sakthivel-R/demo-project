@@ -1,0 +1,18 @@
+<template>
+    <div class="slds-p-bottom_large slds-p-left_large" style="width:500px">
+        <lightning-record-edit-form object-api-name="admin_1__c" id="createAccountForm">
+            <lightning-messages></lightning-messages>
+            <lightning-input-field field-name={fields.name} required>
+            </lightning-input-field>
+            <lightning-input-field field-name={fields.phone} required>
+            </lightning-input-field>
+            <lightning-input-field field-name={fields.support} required>
+            </lightning-input-field>
+            <lightning-button type="submit" name="submit" label="Create admin">
+            </lightning-button>
+            <lightning-button onclick={handleReset} class="slds-m-around_xx-small" label="cancel">
+            </lightning-button>
+        
+        </lightning-record-edit-form>
+    </div>
+</template>

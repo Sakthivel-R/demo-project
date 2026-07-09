@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Componet">
+        <lightning-layout class="slds-p-around_medium">
+            <div class="greatgranparent class" 
+    onclick={greatgrandparentHandler}>
+        <p>great grand parent component 
+            <strong class="slds-m-left_medium">{valuefromChild}</strong>
+        </p>
+        <c-grantparent onchildclick={grantparenthandler}></c-grantparent>
+    </div>
+        </lightning-layout>
+        
+    </lightning-card>
+    
+</template>

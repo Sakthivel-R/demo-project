@@ -1,0 +1,35 @@
+<template>
+    <lightning-card title="User info">
+        <div class="slds-p-around_medium slds-grid slds-wrap slds-gutters">
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2">
+                <lightning-input lable="First Name" 
+            value={fname} onchange={handleFirstNameChange}>
+                </lightning-input>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2">
+                <lightning-input lable="Last Name" 
+            value={lname} onchange={handleLastNameChange}>
+                </lightning-input>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2">
+                <lightning-input lable="Age" 
+            type="number" value={age} onchange={handleAgeChange}>
+                </lightning-input>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2">
+                <lightning-combobox
+            lable="Gender" 
+            value={gender}
+            placeholder="Select a gender"
+            options={genderOption}
+            onchange={handleGenderChange}>
+                </lightning-combobox>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-align_absolute-center">
+                <lightning-button 
+            lable="Submit" varient="brand"
+            onclick={handleSubmit}></lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="grandParent">
+        <div onclick={grandparent}>
+            <c-parent-bubble onchild={fromchild}>
+            </c-parent-bubble>
+        </div>
+        <p> datafromchild - {dataFromChild}</p>
+    </lightning-card>
+</template>

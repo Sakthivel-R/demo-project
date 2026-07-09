@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Account list">
+        <template lwc:if={accounts}>
+            <ul>
+                <template for:each={accounts} for:item="acc">
+                    <li key={acc.Id}>
+                        <a href="#" data-id={acc.id} onclick={selectedAccountId}>
+                            {acc.Name}
+                        </a>
+                    </li>
+                </template>
+            </ul>
+        </template>
+    </lightning-card>
+    <c-Childtoparent account-id = {selectedAccountId}></c-Childtoparent>
+
+</template>

@@ -1,0 +1,15 @@
+<template>
+    <div class="slds-p-around_medium lgc-bg">
+        <lightning-input type="text" label="Enter some text" onkeyup={changeHandler}></lightning-input>
+        <p>this is {fullname}</p>
+    </div>
+    <div class="slds-p-around_medium lgc-bg">
+        <lightning-input type="text" label="with track" onkeyup={objectHandler}></lightning-input>
+        <p> {obje.city} city</p>
+    </div>
+    <div class="slds-p-around_medium lgc-bg">
+        <lightning-input type="text" label="with spread operator" onkeyup={objectHandlerone}></lightning-input>
+        <p> {object.city} city</p>
+    </div>
+    <p> hi </p>
+</template>
